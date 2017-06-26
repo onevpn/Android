@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:gravity="center_horizontal"
+    android:weightSum="6"
+    android:background="@drawable/login_bg">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <ImageView
+        android:src="@drawable/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:text="@string/login_new_welcome_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/login_account_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/btn_yes"
+        android:paddingRight="32dp"
+        android:paddingLeft="32dp"
+        android:background="@drawable/login_new_btn_bg"
+        android:layout_width="320dp"
+        android:layout_height="56dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:text="@string/login_signin_label"
+            android:layout_gravity="right|center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:textSize="18sp"
+            android:textColor="#80ffffff"
+            android:text="@string/login_yes_i_have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/btn_no"
+        android:paddingRight="32dp"
+        android:paddingLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_new_btn_bg"
+        android:layout_width="320dp"
+        android:layout_height="56dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:text="@string/login_signup_label"
+            android:layout_gravity="right|center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:textSize="18sp"
+            android:textColor="#80ffffff"
+            android:text="@string/login_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

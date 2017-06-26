@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:gravity="center"
+        android:id="@+id/connection_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Нет интернета"
+        android:textColor="@color/login_hint2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:gravity="center"
+        android:id="@+id/ip_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/connection_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Обновление IP..."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/launch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/launch_blue" />
+
+    <FrameLayout
+        android:id="@+id/choose_server_btn"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_rect_round_64"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingLeft="24dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/country_flag"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/global" />
+
+        <TextView
+            android:id="@+id/country_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="48dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_white_48px"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:text="United Kingdom"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

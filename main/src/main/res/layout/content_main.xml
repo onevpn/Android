@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.onevpn.android.ui.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/graphic_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/bg_graphic" />
+
+            <RelativeLayout
+                android:id="@+id/download_upload_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/graphic_view"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/label_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/download"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/download_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/label_download"
+                    android:layout_marginTop="8dp"
+                    android:text="0 kb / 0kbps"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/label_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="true"
+                    android:text="@string/upload"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/upload_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/label_upload"
+                    android:layout_marginTop="8dp"
+                    android:text="0 kb / 0kbps"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="72dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/bg_graphic" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_below="@+id/download_upload_box"
+                android:background="@color/bg_item_color" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_below="@+id/download_upload_box"
+                android:background="?attr/selectableItemBackground"
+                android:id="@+id/servers_btn"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:src="@drawable/global"
+                    android:id="@+id/tunnel_flag"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="#00000000" />
+
+                <TextView
+                    android:drawableRight="@drawable/arrow"
+                    android:id="@+id/tunnel_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="United States"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ip_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/servers_btn"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/label_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/ip_label"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ip_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/label_ip"
+                    android:layout_marginTop="4dp"
+                    android:text="0.0.0.0"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/ip_box"
+                android:background="@color/bg_graphic" />
+
+            <ImageView
+                android:id="@+id/launch_btn"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="157dp"
+                android:src="@drawable/launch_off" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:background="#a0000000"
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

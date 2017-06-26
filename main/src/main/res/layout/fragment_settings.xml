@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_graphic"
+    android:orientation="vertical"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context="co.onevpn.android.ui.fragment.SettingsFragment">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/settingLabel"
+            android:text="@string/settings_launch_on_startup"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="48dp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:checked="false"
+            android:id="@+id/setting_launch_on_startup"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setting_block_country_btn"
+        android:background="?attr/selectableItemBackground"
+        android:drawableEnd="@drawable/arrow"
+        android:text="@string/settings_block_country"
+        style="@style/settingLabel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/setting_white_wifi_list_label"
+        android:background="?attr/selectableItemBackground"
+        android:drawableEnd="@drawable/arrow"
+        android:text="@string/settings_white_wifi_list"
+        style="@style/settingLabel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/setting_autoconnect_label"
+        android:background="?attr/selectableItemBackground"
+        android:drawableEnd="@drawable/arrow"
+        android:text="@string/settings_autoconnect"
+        style="@style/settingLabel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/setting_connection_mode_label"
+        android:background="?attr/selectableItemBackground"
+        android:drawableEnd="@drawable/arrow"
+        android:text="@string/settings_connection_mode"
+        style="@style/settingLabel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/settingLabel"
+            android:text="@string/settings_with_unprotected_wifi"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="48dp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:checked="false"
+            android:id="@+id/setting_unprotected_wifi"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

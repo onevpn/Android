@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "816890289581",
+    "firebase_url": "https://onevpn-83dfd.firebaseio.com",
+    "project_id": "onevpn-83dfd",
+    "storage_bucket": "onevpn-83dfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816890289581:android:f49c5fc1f46a8ac0",
+        "android_client_info": {
+          "package_name": "co.onevpn.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816890289581-u2nok5fntmplm5557dphv54ajhflg7s5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.onevpn.android",
+            "certificate_hash": "d61ed3b6efea56ac6f85f35a5d240dd44882fdfa"
+          }
+        },
+        {
+          "client_id": "816890289581-4q04ik998ng58449edglin9l804r3oh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXjCL4F0qbfcbxFte6uOZbgJ_xWojS1VE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816890289581-4q04ik998ng58449edglin9l804r3oh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#364251</color>
+    <color name="colorPrimaryDark">#364251</color>
+    <color name="colorAccent">#00D6B8</color>
+
+    <color name="colorPrimaryNoActionBar">#23282F</color>
+    <color name="colorPrimaryDarkNoActionBar">#1C1F26</color>
+    <color name="colorAccentNoActionBar">#00D6B8</color>
+    <color name="white">#ffffff</color>
+    <color name="text_color">#8291A7</color>
+    <color name="item_divider">#202831</color>
+    <color name="bg_item_color">#252E39</color>
+    <color name="bg_item_red">#DB3838</color>
+    <color name="bg_item_green">#00BE5F</color>
+    <color name="bg_item_yellow">#E1C045</color>
+
+    <color name="bg_graphic">#252D36</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="login_hint">#B3B4B6</color>
+    <color name="login_hint2">#ACADAF</color>
+    <color name="login_bottom_line">#42464D</color>
+    <color name="login_bg">#2C3139</color>
+    <color name="login_text_color">#6C6F75</color>
+    <color name="login_green">#21DAA2</color>
+</resources>

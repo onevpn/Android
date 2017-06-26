@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="48dp"
+        android:weightSum="1">
+
+        <!--aswenc@ya.ru / 0870600e-->
+        <!--tpec1k@gmail.com / 458ca9b2-->
+
+        <include
+            android:id="@+id/email"
+            layout="@layout/view_login_edit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp" />
+
+        <include
+            android:id="@+id/password"
+            layout="@layout/view_login_edit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp" />
+
+        <FrameLayout
+            android:layout_width="320dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/bg_rect_round_64">
+
+            <TextView
+                android:id="@+id/singin_btn"
+                android:layout_width="320dp"
+                android:layout_height="64dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/login_sign_in_label"
+                android:textColor="@color/login_text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/login_new_forgot_label"
+            android:textColor="@color/login_hint"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/login_new_restore_label"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/singup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#20000000"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/login_signup_label"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="#80000000"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="gone"
+        android:id="@+id/first_launch_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="72dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:id="@+id/first_launch_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</RelativeLayout>

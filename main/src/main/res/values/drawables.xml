@@ -1,0 +1,24 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
+    <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
+    <item name="ic_menu_slideshow" type="drawable">@android:drawable/ic_menu_slideshow</item>
+    <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+    <item name="ic_menu_close_clear_cancel" type="drawable">@android:drawable/ic_menu_close_clear_cancel</item>
+    <item name="ic_menu_play" type="drawable">@android:drawable/ic_media_play</item>
+    <item name="ic_menu_pause" type="drawable">@android:drawable/ic_media_pause</item>
+    <item name="ic_menu_save" type="drawable">@android:drawable/ic_menu_save</item>
+    <item name="ic_menu_view" type="drawable">@android:drawable/ic_menu_view</item>
+    <item name="ic_menu_delete" type="drawable">@android:drawable/ic_menu_delete</item>
+    <item name="ic_menu_edit" type="drawable">@android:drawable/ic_menu_edit</item>
+    <item name="ic_menu_import" type="drawable">@drawable/ic_menu_archive</item>
+    <item name="vpn_item_edit" type="drawable">@drawable/vpn_item_settings </item>
+    <item name="ic_menu_add" type="drawable">@android:drawable/ic_menu_add</item>
+    <item name="ic_dialog_alert" type="drawable">@android:drawable/ic_dialog_alert</item>
+    <item name="ic_menu_add_grey" type="drawable">@android:drawable/ic_menu_add</item>
+    <item name="ic_menu_import_grey" type="drawable" >@drawable/ic_menu_archive</item>
+    <item name="ic_menu_delete_grey" type="drawable">@android:drawable/ic_menu_delete</item>
+    <item name="ic_menu_copy" type="drawable">@drawable/ic_menu_copy_holo_light</item>
+    <item name="ic_receipt" type="drawable">@drawable/ic_menu_log</item>
+</resources>
